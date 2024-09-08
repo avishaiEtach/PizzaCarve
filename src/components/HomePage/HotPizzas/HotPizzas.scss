@@ -9,13 +9,19 @@
   padding: 20px; /* Padding within the element */
   box-sizing: border-box;
   background-image: url(../../../assets/images/bg_4.jpg);
-  padding-inline: 20vw;
+  padding-inline: 20dvw;
   padding-bottom: 80px;
+  @media screen and (max-width: $small-desktop-breakpoint) {
+    padding-inline: 25px;
+  }
 }
 
 .hot-pizzas-header {
   margin: 50px auto;
   width: 500px;
+  @media screen and (max-width: $small-desktop-breakpoint) {
+    width: 300px;
+  }
   text-align: center;
   margin-bottom: 90px;
   color: $clr1;

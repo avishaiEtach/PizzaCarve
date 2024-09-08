@@ -31,7 +31,7 @@ export const Services = () => {
           Vokalia and Consonantia, there live the blind texts.
         </p>
       </div>
-      <div className="flex justify-center align-center g20">
+      <div className="services-cards-container flex justify-center align-center g20">
         {cards.map((card, index) => (
           <div
             key={index}

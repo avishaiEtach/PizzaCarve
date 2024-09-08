@@ -28,10 +28,16 @@
     flex-basis: 50%;
   }
   padding-inline: 20vw;
+  @media screen and (max-width: $small-desktop-breakpoint) {
+    padding-inline: 25px;
+  }
 }
 
 .hero-text {
   margin: auto 0;
+  @media screen and (max-width: $small-desktop-breakpoint) {
+    flex-basis: 100%;
+  }
 }
 .hero-header {
   font-weight: 700;
@@ -54,5 +60,8 @@
     height: 100%;
     display: block;
     object-fit: contain;
+  }
+  @media screen and (max-width: $small-desktop-breakpoint) {
+    display: none;
   }
 }
