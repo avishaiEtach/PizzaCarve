@@ -22,6 +22,11 @@
   & > * {
     flex-basis: 50%;
   }
+  @media screen and (max-width: $small-desktop-breakpoint) {
+    padding-inline: 10px;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .about-us-intro-section {
