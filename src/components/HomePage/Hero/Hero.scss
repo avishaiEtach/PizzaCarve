@@ -30,6 +30,7 @@
   padding-inline: 20vw;
   @media screen and (max-width: $small-desktop-breakpoint) {
     padding-inline: 25px;
+    height: auto;
   }
 }
 
