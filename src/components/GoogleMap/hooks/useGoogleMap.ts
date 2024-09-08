@@ -13,8 +13,7 @@ export const useGoogleMap = () => {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "",
-    // googleMapsApiKey: `${process.env.REACT_APP_GOOGLE_MAP_API}`,
+    googleMapsApiKey: `${process.env.REACT_APP_GOOGLE_MAP_API}`,
     language: "en",
   });
 

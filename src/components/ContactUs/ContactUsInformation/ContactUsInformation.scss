@@ -25,6 +25,11 @@
     padding: 40px;
     background-color: rgba($clr4, 0.7);
   }
+  @media screen and (max-width: $small-desktop-breakpoint) {
+    padding-inline: 30px;
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .contact-us-information {
