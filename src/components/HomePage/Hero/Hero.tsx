@@ -14,11 +14,13 @@ export const Hero = () => {
           <span className="hero-header">Timeless Flavors</span>
         </div>
         <p className="hero-paragraph">
-          Where the crust is king! At Cheesy Crust, we bring you the cheesiest,
-          most delicious pizzas with a perfect golden crust in every bite.
-          Indulge in our mouthwatering flavors, crafted with passion and topped
-          with the freshest ingredients. It's more than just pizza—it's a cheesy
-          dream come true!
+          Where the crust is king! At Pizza Carve, we bring you bold flavors and
+          irresistible slices. Every pizza is a masterpiece, crafted with love
+          and topped with the freshest ingredients. From the cheesiest creations
+          to gourmet innovations, we make sure every bite is packed with flavor
+          and finished with the perfect crispy crust. Welcome to a pizza
+          experience like no other—where every slice is a celebration of
+          deliciousness!
         </p>
         <Button
           onClick={() => {
