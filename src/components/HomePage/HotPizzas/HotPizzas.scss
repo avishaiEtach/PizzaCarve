@@ -1,0 +1,82 @@
+@import "../../../assets/styles/setup/setup";
+
+.hot-pizzas {
+  background-size: cover; /* Fills the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  background-clip: padding-box; /* Ensures the background extends into the padding area */
+  width: 100%;
+  padding: 20px; /* Padding within the element */
+  box-sizing: border-box;
+  background-image: url(../../../assets/images/bg_4.jpg);
+  padding-inline: 20vw;
+  padding-bottom: 80px;
+}
+
+.hot-pizzas-header {
+  margin: 50px auto;
+  width: 500px;
+  text-align: center;
+  margin-bottom: 90px;
+  color: $clr1;
+}
+
+.hot-pizzas-h2 {
+  font-size: rem(38px);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hot-pizzas-p {
+  font-size: rem(16px);
+  line-height: 1.4;
+}
+
+.hot-pizzas-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.hot-pizza-card {
+  background-color: rgba(0, 0, 0, 0.588);
+  padding: 20px;
+  border-radius: 10px;
+  &:hover {
+    .hot-pizza-card-text {
+      h4 {
+        color: $clr2;
+      }
+    }
+  }
+}
+
+.hot-pizza-card-image {
+  width: 130px;
+  height: 100%;
+}
+
+.hot-pizza-card-text {
+  color: $clr1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  h4 {
+    font-size: rem(18px);
+    font-weight: 700;
+    transition: 0.4s;
+  }
+  p {
+    font-size: rem(16px);
+    font-weight: 400;
+    color: rgba($clr1, 0.631);
+  }
+}
+
+.hot-pizza-card-price-container {
+  margin-top: auto;
+}
+
+.hot-pizza-card-price {
+  margin-top: 5px;
+}

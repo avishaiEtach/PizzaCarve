@@ -1,0 +1,49 @@
+@import "../../assets/styles/setup/setup";
+
+.main-header-container {
+  background-color: $clr1;
+  box-shadow: 0 0 0 100vmax $clr1;
+  clip-path: inset(0 -100vmax);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-block: 20px;
+  padding-inline: 20vw;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: rem(28px);
+  cursor: pointer;
+  &::before {
+    content: "";
+    background-image: url("../../assets/images/תמונה3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-position-y: 25px;
+    margin-right: 7px;
+  }
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 3px;
+  a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $clr4;
+    transition: 0.4s;
+    &:hover {
+      color: $clr2;
+    }
+    &.active {
+      color: $clr2;
+    }
+  }
+}

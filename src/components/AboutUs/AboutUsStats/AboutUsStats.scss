@@ -1,0 +1,102 @@
+@import "../../../assets/styles/setup/setup";
+
+.about-us-stats {
+  background-image: url(../../../assets/images/bg7.jpg);
+  width: 100%;
+  background-position: 50% 50%;
+  position: relative;
+  filter: brightness(1.4);
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: black;
+    z-index: 0;
+  }
+}
+
+.stats-gallery {
+  display: grid;
+  padding-inline: 20vw;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: auto;
+  z-index: 5;
+  position: relative;
+  height: 100%;
+  padding-block: 70px;
+  padding-bottom: 20px;
+  & > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+  }
+}
+
+.stats-card-icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 35px;
+  &:hover {
+    &::after {
+      background-color: $clr2;
+      border: 1px solid transparent;
+      transform: rotate(135deg);
+      z-index: 0;
+    }
+    svg {
+      g {
+        fill: $clr4;
+      }
+    }
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+    opacity: 0.8;
+    g {
+      fill: $clr2;
+    }
+  }
+  &::after {
+    transition: all 0.3s ease;
+    position: absolute;
+    content: "";
+    border: 1px solid $clr2;
+    opacity: 0.8;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    top: -32%;
+    right: -25%;
+  }
+}
+
+.stats-card-number {
+  font-size: rem(22px);
+  font-weight: 700;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  color: $clr2;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  .plus-icon {
+    padding-bottom: 3px;
+  }
+}
+
+.stats-card-number-deception {
+  opacity: 0.5;
+}

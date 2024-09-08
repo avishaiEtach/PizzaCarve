@@ -1,0 +1,9 @@
+@import "../../../assets/styles/setup/setup";
+
+.contact-us-send-mail {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

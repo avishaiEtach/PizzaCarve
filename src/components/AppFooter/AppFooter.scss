@@ -1,0 +1,40 @@
+@import "../../assets/styles/setup/setup";
+
+.app-footer {
+  padding-inline: 20vw;
+  padding-block: 40px;
+  color: $clr4;
+}
+
+.footer__logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.footer__details__text {
+  font-size: 12px;
+}
+
+.footer__icons {
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.footer__links {
+  font-size: 12px;
+  padding-top: 10px;
+  a {
+    text-decoration: none;
+    color: $clr4;
+    &.active {
+      color: $clr2;
+    }
+  }
+}

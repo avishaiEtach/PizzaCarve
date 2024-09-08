@@ -1,0 +1,78 @@
+@import "../../../assets/styles/setup/setup";
+
+.services {
+  // height: 500px;
+  background-color: rgba($color: $clr2, $alpha: 0.7);
+  filter: brightness(1.4);
+  box-shadow: 0 0 0 100vmax rgba($color: $clr2, $alpha: 0.7);
+  clip-path: inset(0 -100vmax);
+  padding-block: 30px;
+  color: $clr4;
+}
+
+.services-header {
+  margin: 50px auto;
+  width: 500px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.services-h2 {
+  font-size: rem(32px);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.services-p {
+  font-size: rem(16px);
+  line-height: 1.4;
+}
+
+.services-card {
+  text-align: center;
+  padding-inline: 20px;
+  width: 300px;
+  &:hover {
+    .services-card-icon {
+      &::after {
+        background-color: $clr2;
+        border: 1px solid transparent;
+        transform: rotate(135deg);
+      }
+      svg {
+        position: relative;
+        z-index: 1;
+        g {
+          fill: $clr1;
+        }
+      }
+    }
+  }
+  p {
+    line-height: 1.4;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: rem(22px);
+  }
+}
+
+.services-card-icon {
+  position: relative;
+  margin-bottom: 50px;
+  svg {
+    width: 80px;
+    height: 80px;
+  }
+  &::after {
+    transition: all 0.3s ease;
+    position: absolute;
+    content: "";
+    border: 1px solid rgba($color: #000000, $alpha: 0.5);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    top: -25%;
+    right: -30%;
+  }
+}

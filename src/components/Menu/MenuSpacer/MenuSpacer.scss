@@ -1,0 +1,41 @@
+@import "../../../assets/styles/setup/setup";
+
+.menu-spacer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 30px;
+  gap: 10px;
+  &::before,
+  &::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: $clr2;
+    filter: brightness(0.8);
+    display: flex;
+  }
+}
+
+.reg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.reg-small {
+  width: 8px;
+  height: 8px;
+  background-color: $clr2;
+  filter: brightness(1.4);
+  transform: rotate(135deg);
+}
+
+.reg-big {
+  width: 15px;
+  height: 15px;
+  background-color: $clr2;
+  filter: brightness(1.4);
+  transform: rotate(135deg);
+}

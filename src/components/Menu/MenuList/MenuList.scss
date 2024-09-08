@@ -1,0 +1,79 @@
+@import "../../../assets/styles/setup/setup";
+
+.menu {
+  background-image: url(../../../assets/images/bg_4.jpg);
+  background-size: cover;
+  padding-inline: 20vw;
+  color: $clr1;
+  text-align: center;
+  padding-block: 40px;
+}
+
+.menu-header {
+  font-size: rem(38px);
+  font-weight: 700;
+}
+
+.menu-list-main-header {
+  font-size: rem(28px);
+  margin-top: 70px;
+}
+
+.menu-list-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  column-gap: 50px;
+  margin-block: 40px;
+  & > * {
+    &:hover {
+      .menu-list-card-title {
+        color: $clr2;
+      }
+    }
+  }
+}
+
+.menu-list-card-image-container {
+  width: 80px;
+  height: 80px;
+  img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.menu-list-card-text-container {
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &[data-center="true"] {
+    justify-content: center;
+  }
+}
+
+.menu-list-card-title-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu-list-card-title {
+  transition: 0.4s;
+  text-align: start;
+  font-size: rem(20px);
+}
+
+.space {
+  flex: 1;
+  border-bottom: 1px dashed $clr2;
+}
+
+.menu-list-card-description {
+  text-align: start;
+  opacity: 0.7;
+}

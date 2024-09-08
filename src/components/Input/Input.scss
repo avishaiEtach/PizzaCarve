@@ -1,0 +1,87 @@
+@import "../../assets/styles/setup/setup";
+
+.wrapper .input-data {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .input-data textarea {
+  resize: none;
+}
+
+.wrapper .input-data input,
+.wrapper .input-data textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: 0;
+  border-bottom: 2px solid rgba($clr1, 0.5);
+  font-size: rem(17px);
+  font-family: Josefin Sans;
+  background-color: transparent;
+  color: $clr1;
+  padding-bottom: 5px;
+  &::placeholder {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.input-data input:user-invalid:not(:placeholder-shown) ~ label,
+.input-data textarea:user-invalid:not(:placeholder-shown) ~ label,
+.input-data input:not(:placeholder-shown) ~ label,
+.input-data textarea:not(:placeholder-shown) ~ label,
+.input-data input:focus ~ label,
+.input-data textarea:focus ~ label {
+  transform: translateY(-20px);
+  font-size: rem(15px);
+  color: $clr2;
+}
+
+.input-data input:user-invalid:not(:placeholder-shown) ~ label,
+.input-data textarea:user-invalid:not(:placeholder-shown) ~ label {
+  color: $clr6;
+}
+
+.wrapper .input-data label {
+  position: absolute;
+  left: 0;
+  color: rgba($clr1, 0.5);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.wrapper .input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.wrapper .input-data:has(textarea) .underline {
+  bottom: 4px;
+}
+
+.input-data .underline::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: $clr2;
+  transform: scaleX(0);
+  transition: transform 0.3 ease;
+}
+
+.input-data input:user-invalid:not(:placeholder-shown) ~ .underline::before,
+.input-data textarea:user-invalid:not(:placeholder-shown) ~ .underline::before,
+.input-data input:not(:placeholder-shown) ~ .underline::before,
+.input-data textarea:not(:placeholder-shown) ~ .underline::before,
+.input-data input:focus ~ .underline::before,
+.input-data textarea:focus ~ .underline::before {
+  transform: scaleX(1);
+}
+
+.input-data input:user-invalid:not(:placeholder-shown) ~ .underline::before,
+.input-data textarea:user-invalid:not(:placeholder-shown) ~ .underline::before {
+  background-color: $clr6;
+}
