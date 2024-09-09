@@ -1,36 +1,6 @@
-import { ReactComponent as chef } from "../../../assets/images/chef.svg";
-import { ReactComponent as customers } from "../../../assets/images/customers.svg";
-import { ReactComponent as pizza_slice } from "../../../assets/images/pizza_slice.svg";
-import { ReactComponent as award } from "../../../assets/images/award.svg";
+import { stats } from "../../../assets/data/data";
 import "./AboutUsStats.scss";
 import CountUp from "react-countup";
-
-const stats = [
-  {
-    icon: customers,
-    title: "Happy Customers",
-    number: 12450,
-    withPlusIcon: true,
-  },
-  {
-    icon: pizza_slice,
-    title: "Pizzas Served",
-    number: 50000,
-    withPlusIcon: true,
-  },
-  {
-    icon: award,
-    title: "Number of Awards",
-    number: 15,
-    withPlusIcon: false,
-  },
-  {
-    icon: chef,
-    title: "Expert Chefs",
-    number: 4,
-    withPlusIcon: false,
-  },
-];
 
 export const AboutUsStats = () => {
   return (

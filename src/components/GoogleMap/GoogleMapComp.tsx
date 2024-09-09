@@ -1,4 +1,4 @@
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import { GoogleMap, Marker } from "@react-google-maps/api";
 import { useGoogleMap } from "./hooks/useGoogleMap";
 
 export const GoogleMapComp = () => {

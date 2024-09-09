@@ -1,25 +1,5 @@
+import { cards } from "../../../assets/data/data";
 import "./Services.scss";
-import { ReactComponent as bicycle } from "../../../assets/images/bicycle.svg";
-import { ReactComponent as bio } from "../../../assets/images/bio.svg";
-import { ReactComponent as pizza_slice } from "../../../assets/images/pizza_slice.svg";
-
-const cards = [
-  {
-    text: "Fresh, nutritious ingredients combined with delicious flavors to keep you satisfied and healthy.",
-    title: "Healthy Foods",
-    icon: bio,
-  },
-  {
-    text: "Enjoy your pizza hot and fresh, delivered to your door with lightning speed.",
-    title: "Fastest Delivery",
-    icon: bicycle,
-  },
-  {
-    text: "Experience unique and authentic flavors crafted from time-honored recipes",
-    title: "Original Recipes",
-    icon: pizza_slice,
-  },
-];
 
 export const Services = () => {
   return (

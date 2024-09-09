@@ -1,6 +1,3 @@
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime";
-
 export function makeId(length = 6) {
   var txt = "";
   var possible =

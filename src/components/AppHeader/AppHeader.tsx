@@ -1,5 +1,4 @@
 import "./AppHeader.scss";
-import logo from "../../assets/images/logo.png";
 import { routes, routesPath } from "../../routes";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";

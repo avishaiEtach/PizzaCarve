@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import pizza from "../../../assets/images/תמונה2.png";
+import pizza from "../../../assets/images/products/hero_pizza.png";
 import { Button } from "../../Button/Button";
 import "./Hero.scss";
 import { routesPath } from "../../../routes";
@@ -31,7 +31,7 @@ export const Hero = () => {
         />
       </div>
       <div className="hero-image-container" data-aos="fade-up">
-        <img className="rotate-image" src={pizza} />
+        <img className="rotate-image" alt="hero-pizza" src={pizza} />
       </div>
     </div>
   );
